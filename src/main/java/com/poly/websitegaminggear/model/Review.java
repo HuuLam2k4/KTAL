@@ -7,26 +7,21 @@ import lombok.NoArgsConstructor;
 
 import java.util.Date;
 
+@Entity
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Entity
-@Table(name = "Order_Items")
-public class OrderItem {
+@Table(name = "Reviews")
+public class Review {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int order_item_id;
-    private Date order_date;
-    private int quantity;
-    private Double price;
-    private Date updated_at;
+    private int review_id;
+    private int rating;
+    private String comment;
+    private Date create_at;
+    private Date update_at;
 
     @ManyToOne
     @JoinColumn(name = "product_id")
     private Product products;
-
-    @ManyToOne
-    @JoinColumn(name="order_id")
-    private Order orders;
-
 }

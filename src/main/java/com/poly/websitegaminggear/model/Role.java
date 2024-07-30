@@ -7,18 +7,18 @@ import lombok.NoArgsConstructor;
 
 import java.util.List;
 
-
+@Entity
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Entity
-@Table(name = "Order_Statuses")
-public class OrderStatus {
+@Table(name = "Roles")
+public class Role {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int status_id;
-    private String status_name;
+    private int role_id;
+    @Column(unique = true, nullable = false)
+    private String role_name;
 
-    @OneToMany(mappedBy = "orderStatus")
-    private List<Order> orders;
+    @OneToMany(mappedBy = "roles")
+    private List<UserRole> userRoles;
 }

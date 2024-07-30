@@ -5,6 +5,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.awt.print.Book;
 import java.util.Date;
 import java.util.List;
 
@@ -15,19 +16,22 @@ import java.util.List;
 @Table(name = "Users")
 public class User {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    String username;
-    String password_hash;
-    String first_name;
-    String last_name;
-    String email;
-    String phone_number;
-    String address;
-    Date create_at;
-    Date update_at;
-    String avatar;
-    boolean status;
-//  Nối 1 nhiều với bảng shoppingcart
-    @OneToMany(mappedBy = "shoppingCartId")
-    List<ShoppingCart> shoppingCarts;
+    private String username;
+    private String password_hash;
+    private String first_name;
+    private String last_name;
+    private String email;
+    private String phone_number;
+    private String address;
+    private Date create_at;
+    private Date update_at;
+    private String avatar;
+    private boolean status;
+
+    @OneToMany(mappedBy = "users")
+    private List<ShoppingCart> shoppingCarts;
+
+    @OneToMany(mappedBy = "users")
+    private List<UserRole> userRoles;
+
 }

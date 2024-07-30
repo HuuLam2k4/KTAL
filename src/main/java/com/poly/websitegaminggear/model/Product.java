@@ -16,13 +16,28 @@ public class Product {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     int product_id;
     @Column(unique = true, nullable = false)
-    String product_name;
-    String description;
-    Date created_at;
-    Date updated_at;
-    @OneToMany(mappedBy = "product")
-    List<ProductDetail> productDetails;
-    // Nối một nhiều bảng CartItem
-    @OneToMany(mappedBy = "cart_item_id")
-    List<Cart_Item> cartItems;
+    private String product_name;
+    private String description;
+    private Date created_at;
+    private Date updated_at;
+
+
+    @ManyToOne
+    @JoinColumn(name = "products")
+    private Category category;
+
+    @OneToMany(mappedBy = "products")
+    private List<ProductDetail> product_details;
+
+    @OneToMany(mappedBy = "products")
+    private List<Image> images;
+
+    @OneToMany(mappedBy = "products")
+    private List<Review> reviews;
+
+    @OneToMany(mappedBy = "products")
+    private List<OrderItem> order_items;
+
+    @OneToMany(mappedBy = "products")
+    private List<CartItem> cart_items;
 }

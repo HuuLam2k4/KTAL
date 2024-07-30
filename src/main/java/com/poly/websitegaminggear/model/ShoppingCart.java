@@ -6,6 +6,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.util.Date;
+import java.util.List;
 
 @Data
 @NoArgsConstructor
@@ -16,11 +17,14 @@ public class ShoppingCart {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "cart_id")
-    int shoppingCartId;
-    Date create_at;
-    Date update_at;
-//    Nối nhiều 1 voi bảng User
+    private int shoppingCartId;
+    private Date create_at;
+    private Date update_at;
+
     @ManyToOne
     @JoinColumn(name = "username")
-    User user;
+    private User users;
+
+    @OneToMany(mappedBy = "shoppingCarts")
+    private List<CartItem> cartItems;
 }

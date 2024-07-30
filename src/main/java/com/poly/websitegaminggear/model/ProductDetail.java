@@ -15,10 +15,20 @@ import java.util.List;
 public class ProductDetail {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    int product_detail_id;
-    double price;
-    int quanlity;
+    private int product_detail_id;
+    private double price;
+    private int quanlity;
+
     @ManyToOne
     @JoinColumn(name = "product_id")
-    Product product;
+    private Product products;
+
+    @ManyToOne
+    @JoinColumn(name = "capacity_id")
+    private Capacity capacity;
+
+    @ManyToOne
+    @JoinColumn(name = "color_id")
+    private Color color;
+
 }
