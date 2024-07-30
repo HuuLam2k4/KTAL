@@ -21,8 +21,6 @@ public class Product {
     private Date created_at;
     private Date updated_at;
 
-    @OneToMany(mappedBy = "product")
-    private List<CartItem> cart_items;
 
     @ManyToOne
     @JoinColumn(name = "products")
@@ -37,4 +35,9 @@ public class Product {
     @OneToMany(mappedBy = "products")
     private List<Review> reviews;
 
+    @OneToMany(mappedBy = "products")
+    private List<OrderItem> order_items;
+
+    @OneToMany(mappedBy = "products")
+    private List<CartItem> cart_items;
 }

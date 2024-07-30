@@ -15,10 +15,18 @@ import java.util.Date;
 public class OrderItem {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int order_id;
+    private int order_item_id;
     private Date order_date;
     private int quantity;
     private Double price;
     private Date updated_at;
+
+    @ManyToOne
+    @JoinColumn(name = "product_id")
+    private Product products;
+
+    @ManyToOne
+    @JoinColumn(name="order_id")
+    private Order orders;
 
 }

@@ -20,10 +20,10 @@ public class CartItem {
     private Date update_at;
 
     @ManyToOne
-    @JoinColumn(name = "cart_id")
-    private ShoppingCart shoppingCart;
+    @JoinColumn(name = "product_id")
+    private Product products;
 
     @ManyToOne
-    @JoinColumn(name = "product_id")
-    private Product product;
+    @JoinColumn(name = "cart_id")
+    private ShoppingCart shoppingCarts;
 }

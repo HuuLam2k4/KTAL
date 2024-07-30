@@ -23,4 +23,6 @@ public class Category {
     @OneToMany(mappedBy = "product_id")
     private List<Product> products;
 
+    @OneToMany(mappedBy = "categories")
+    private List<Category_Supplier> categorySuppliers;
 }

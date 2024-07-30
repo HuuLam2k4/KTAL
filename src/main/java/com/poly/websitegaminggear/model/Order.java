@@ -23,4 +23,10 @@ public class Order{
     private  Date updated_at;
     private String username;
 
+    @OneToMany(mappedBy = "orders")
+    private List<OrderItem> order_items;
+
+    @ManyToOne
+    @JoinColumn(name = "status_id")
+    private OrderStatus orderStatus;
 }

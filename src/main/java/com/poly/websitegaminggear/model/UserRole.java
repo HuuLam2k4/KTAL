@@ -14,4 +14,12 @@ public class UserRole {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
+
+    @ManyToOne
+    @JoinColumn(name = "username")
+    private User users;
+
+    @ManyToOne
+    @JoinColumn(name = "role_id")
+    private Role roles;
 }

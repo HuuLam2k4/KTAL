@@ -28,8 +28,10 @@ public class User {
     private String avatar;
     private boolean status;
 
-    @OneToMany(mappedBy = "user")
+    @OneToMany(mappedBy = "users")
     private List<ShoppingCart> shoppingCarts;
 
+    @OneToMany(mappedBy = "users")
+    private List<UserRole> userRoles;
 
 }

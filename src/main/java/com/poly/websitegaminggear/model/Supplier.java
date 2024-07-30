@@ -5,6 +5,8 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.List;
+
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
@@ -17,4 +19,7 @@ public class Supplier {
     @Column(unique = true, nullable = false)
     private String supplier_name;
     private String description;
+
+    @OneToMany(mappedBy = "supplier")
+    private List<Category_Supplier> categorySuppliers;
 }

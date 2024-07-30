@@ -18,4 +18,7 @@ public class OrderStatus {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int status_id;
     private String status_name;
+
+    @OneToMany(mappedBy = "orderStatus")
+    private List<Order> orders;
 }

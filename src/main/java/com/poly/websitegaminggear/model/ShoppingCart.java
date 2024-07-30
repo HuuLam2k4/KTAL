@@ -23,8 +23,8 @@ public class ShoppingCart {
 
     @ManyToOne
     @JoinColumn(name = "username")
-    private User user;
+    private User users;
 
-    @OneToMany(mappedBy = "shoppingCart")
+    @OneToMany(mappedBy = "shoppingCarts")
     private List<CartItem> cartItems;
 }
