@@ -5,17 +5,13 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.List;
-
-
+@Entity
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Entity
-@Table(name = "Order_Statuses")
-public class OrderStatus {
+@Table(name = "Users_Roles")
+public class UserRole {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int status_id;
-    private String status_name;
+    private int id;
 }

@@ -17,16 +17,10 @@ import java.util.List;
 public class Order{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    int order_id;
-    Date order_date;
-    Double total_amount;
-    Date updated_at;
-    String username;
-    // nối nhiều 1 với bảng order status
-    @ManyToOne
-    @JoinColumn(name = "status_id")
-    OrderStatus status;
-//  nốu 1 nhiều với bảng order item
-    @OneToMany(mappedBy = "order")
-    List<OrderItem> items;
+    private int order_id;
+    private Date order_date;
+    private  Double total_amount;
+    private  Date updated_at;
+    private String username;
+
 }
