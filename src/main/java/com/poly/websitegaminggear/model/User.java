@@ -31,5 +31,6 @@ public class User {
     @OneToMany(mappedBy = "user")
     private List<ShoppingCart> shoppingCarts;
 
-
+    @OneToMany(mappedBy = "users", fetch = FetchType.EAGER)
+    private List<UserRole> userRoles;
 }
