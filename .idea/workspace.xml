@@ -5,22 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b8355c6c-181b-4aca-a942-0962f4be1923" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/repository/CapacityRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/repository/CartItemRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/repository/Category_SupplierRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/repository/ColorRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/repository/ImageRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/repository/ProductDetailRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/repository/ProductRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/repository/ReviewRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/repository/RoleRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/repository/ShoppingCartRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/repository/SupplierRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/repository/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/repository/UserRoleRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/message/message.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/message/message.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,7 +123,7 @@
       <workItem from="1722319891789" duration="856000" />
       <workItem from="1722321078887" duration="659000" />
       <workItem from="1722326810635" duration="938000" />
-      <workItem from="1722332019926" duration="10219000" />
+      <workItem from="1722332019926" duration="10906000" />
     </task>
     <servers />
   </component>
