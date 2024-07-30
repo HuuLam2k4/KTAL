@@ -15,13 +15,10 @@ import java.util.Date;
 public class OrderItem {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    int order_id;
-    Date order_date;
-    int quantity;
-    Double price;
-    Date updated_at;
-//    Nối nhiều 1 với bảng order
-    @ManyToOne
-    @JoinColumn(name ="order_id")
-    Order order;
+    private int order_id;
+    private Date order_date;
+    private int quantity;
+    private Double price;
+    private Date updated_at;
+
 }

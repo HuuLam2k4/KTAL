@@ -7,15 +7,19 @@ import lombok.NoArgsConstructor;
 
 import java.util.List;
 
-
+@Entity
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Entity
-@Table(name = "Order_Statuses")
-public class OrderStatus {
+@Table(name = "Capacity")
+public class Capacity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int status_id;
-    private String status_name;
+    private int capacity_id;
+    @Column(unique = true, nullable = false)
+    private String capacity_name;
+
+    @OneToMany(mappedBy = "capacity")
+    private List<ProductDetail> productsDetails;
+
 }
