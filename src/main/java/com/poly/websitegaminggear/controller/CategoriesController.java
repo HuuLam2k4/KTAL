@@ -17,10 +17,12 @@ public class CategoriesController {
     @Autowired
     CategoryRepository categoryRepository;
     private String msg ="";
+
     @GetMapping("/all")
     public List<Category> getAll(){
         return categoryRepository.findAll();
     }
+
     @PostMapping("/save")
     public ResponseEntity<String> save(@Validated @RequestBody Category category) {
         try {
