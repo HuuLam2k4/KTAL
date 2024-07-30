@@ -5,6 +5,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.List;
 
 
 @Data
@@ -12,9 +13,13 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Entity
 @Table(name = "Order_Statuses")
-public class OrderStatuses {
+public class OrderStatus {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     int status_id;
     String status_name;
+
+    //Nối 1 nhiều với bảng order
+    @OneToMany(mappedBy = "status")
+    List<Order> orders;
 }

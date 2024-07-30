@@ -13,11 +13,14 @@ import java.util.Date;
 @Entity
 @Table(name = "Shopping_Cart")
 public class ShoppingCart {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "cart_id")
     int shoppingCartId;
     Date create_at;
     Date update_at;
+//    Nối nhiều 1 voi bảng User
+    @ManyToOne
+    @JoinColumn(name = "username")
+    User user;
 }

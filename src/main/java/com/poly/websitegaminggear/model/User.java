@@ -6,6 +6,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.util.Date;
+import java.util.List;
 
 @Data
 @NoArgsConstructor
@@ -26,5 +27,7 @@ public class User {
     Date update_at;
     String avatar;
     boolean status;
-
+//  Nối 1 nhiều với bảng shoppingcart
+    @OneToMany(mappedBy = "shoppingCartId")
+    List<ShoppingCart> shoppingCarts;
 }

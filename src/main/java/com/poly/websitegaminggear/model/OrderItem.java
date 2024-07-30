@@ -1,6 +1,5 @@
 package com.poly.websitegaminggear.model;
 
-
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -12,14 +11,17 @@ import java.util.Date;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "Orders")
-public class Orders {
+@Table(name = "Order_Items")
+public class OrderItem {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     int order_id;
     Date order_date;
-    Double total_amount;
+    int quantity;
+    Double price;
     Date updated_at;
-    String username;
-    int status_id;
+//    Nối nhiều 1 với bảng order
+    @ManyToOne
+    @JoinColumn(name ="order_id")
+    Order order;
 }
