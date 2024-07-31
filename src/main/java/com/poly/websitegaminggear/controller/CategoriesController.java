@@ -59,7 +59,9 @@ public class CategoriesController {
             } else {
                 return new ResponseEntity<>("Category not found", HttpStatus.NOT_FOUND);
             }
-        } catch (Exception e) {
+        } catch (Exception e
+
+        ) {
             e.printStackTrace();
             return new ResponseEntity<>("Delete failed", HttpStatus.INTERNAL_SERVER_ERROR);
         }

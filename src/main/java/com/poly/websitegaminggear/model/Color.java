@@ -5,16 +5,20 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-
+import java.util.List;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "Order_Statuses")
-public class OrderStatuses {
+@Table(name = "Color")
+public class Color {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    int status_id;
-    String status_name;
+    private int color_id;
+    @Column(unique = true, nullable = false)
+    private String color_name;
+
+    @OneToMany(mappedBy = "color")
+    private List<ProductDetail> productDetail;
 }

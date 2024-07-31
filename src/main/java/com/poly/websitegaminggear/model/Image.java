@@ -5,25 +5,18 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.Date;
-
+@Entity
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Entity
-@Table(name = "Order_Items")
-public class OrderItems {
+@Table(name = "Images")
+public class Image {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int image_id;
+    private String image_name;
 
-    int order_id;
-    Date order_date;
-    int order_item_id;
-    int quantity;
-    Double price;
-    Date updated_at;
-    int order_id;
-    int product_id;
+    @ManyToOne
+    @JoinColumn(name = "product_id")
+    private Product products;
 }
-
-

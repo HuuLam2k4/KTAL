@@ -12,14 +12,18 @@ import java.util.Date;
 @AllArgsConstructor
 @NoArgsConstructor
 @Table(name = "Cart_Items")
-public class Cart_Item {
+public class CartItem {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    int cart_item_id;
-    int quanlity;
-    Date update_at;
-    //Nối nhìu một Product
+    private int cart_item_id;
+    private int quanlity;
+    private Date update_at;
+
     @ManyToOne
-    @JoinColumn(name = "product_id")
-    Product product;
+    @JoinColumn(name = "product_detail_id")
+    private ProductDetail productDetails;
+
+    @ManyToOne
+    @JoinColumn(name = "cart_id")
+    private ShoppingCart shoppingCarts;
 }

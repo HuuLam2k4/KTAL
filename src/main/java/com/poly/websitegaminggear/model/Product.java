@@ -2,11 +2,12 @@ package com.poly.websitegaminggear.model;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
+import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.util.Date;
 import java.util.List;
-
+@Data
 @Entity
 @AllArgsConstructor
 @NoArgsConstructor
@@ -16,13 +17,20 @@ public class Product {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     int product_id;
     @Column(unique = true, nullable = false)
-    String product_name;
-    String description;
-    Date created_at;
-    Date updated_at;
-    @OneToMany(mappedBy = "product")
-    List<ProductDetail> productDetails;
-    // Nối một nhiều bảng CartItem
-    @OneToMany(mappedBy = "cart_item_id")
-    List<Cart_Item> cartItems;
+    private String product_name;
+    private String description;
+    private Date created_at;
+    private Date updated_at;
+
+
+    @ManyToOne
+    @JoinColumn(name = "products")
+    private Category category;
+
+    @OneToMany(mappedBy = "products")
+    private List<ProductDetail> product_details;
+
+    @OneToMany(mappedBy = "products")
+    private List<Image> images;
+
 }
