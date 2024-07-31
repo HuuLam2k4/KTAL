@@ -3,8 +3,10 @@ package com.poly.websitegaminggear.service;
 import com.poly.websitegaminggear.controller.ShoppingCartRestController;
 import com.poly.websitegaminggear.model.CartItem;
 import com.poly.websitegaminggear.model.Product;
+import com.poly.websitegaminggear.model.ProductDetail;
 import com.poly.websitegaminggear.model.ShoppingCart;
 import com.poly.websitegaminggear.repository.CartItemRepository;
+import com.poly.websitegaminggear.repository.ProductDetailRepository;
 import com.poly.websitegaminggear.repository.ProductRepository;
 import com.poly.websitegaminggear.repository.ShoppingCartRepository;
 import com.poly.websitegaminggear.utils.SessionService;
@@ -27,8 +29,13 @@ public class ShoppingCartServicempl implements ShoppingCartService {
 
     @Autowired
     private ProductRepository productRepository;
+
+    @Autowired
+    private ProductDetailRepository productDetailRepository;
+
     @Autowired
     private ShoppingCartRepository shoppingCartRepository;
+
     @Autowired
     private SessionService sessionService;
 
@@ -47,10 +54,10 @@ public class ShoppingCartServicempl implements ShoppingCartService {
         }
         // kieemr tra su ton tai
         ShoppingCart shoppingCart = shoppingCartRepository.findById(cartItemId).orElseThrow(() -> new RuntimeException("Khong cos gio hanfg"));
-        Product product = productRepository.findById(productId).orElseThrow(() -> new RuntimeException("khong cos product"));
+        ProductDetail productDetail = productDetailRepository.findById(productId).orElseThrow(() -> new RuntimeException("khong cos product"));
 
         Optional<CartItem> existingCartItem = shoppingCart.getCartItems().stream()
-                .filter(cartItem -> cartItem.getProductDetails().getProducts().getProduct_id()== productId)
+                .filter(cartItem -> cartItem.getProductDetails().getProducts().getProduct_id() == productId)
                 .findFirst();
         if (existingCartItem.isPresent()) {
             CartItem cartItem = existingCartItem.get();
@@ -59,6 +66,7 @@ public class ShoppingCartServicempl implements ShoppingCartService {
             cartItemRepository.save(cartItem);
         } else {
             CartItem cartItem = new CartItem();
+//            cartItem.setProductDetails();
             cartItem.setQuanlity(quantity);
             cartItem.setUpdate_at(new Date());
             cartItem.setShoppingCarts(shoppingCart);
