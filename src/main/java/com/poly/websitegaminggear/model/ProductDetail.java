@@ -31,4 +31,12 @@ public class ProductDetail {
     @JoinColumn(name = "color_id")
     private Color color;
 
+    @OneToMany(mappedBy = "productDetails")
+    private List<OrderItem> order_items;
+
+    @OneToMany(mappedBy = "productDetails")
+    private List<CartItem> cart_items;
+
+    @OneToMany(mappedBy = "productDetails")
+    private List<Review> reviews;
 }

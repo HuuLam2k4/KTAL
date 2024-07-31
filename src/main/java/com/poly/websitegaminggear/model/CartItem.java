@@ -20,8 +20,8 @@ public class CartItem {
     private Date update_at;
 
     @ManyToOne
-    @JoinColumn(name = "product_id")
-    private Product products;
+    @JoinColumn(name = "product_detail_id")
+    private ProductDetail productDetails;
 
     @ManyToOne
     @JoinColumn(name = "cart_id")

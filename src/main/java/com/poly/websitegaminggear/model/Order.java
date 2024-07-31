@@ -19,7 +19,7 @@ public class Order{
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int order_id;
     private Date order_date;
-    private  Double total_amount;
+    private Double total_amount;
     private  Date updated_at;
     private String username;
 
