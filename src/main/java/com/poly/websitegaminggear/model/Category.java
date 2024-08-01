@@ -20,7 +20,7 @@ public class Category {
     private String category_name;
     private String description;
 
-    @OneToMany(mappedBy = "product_id")
+    @OneToMany(mappedBy = "category")
     private List<Product> products;
 
     @OneToMany(mappedBy = "categories")

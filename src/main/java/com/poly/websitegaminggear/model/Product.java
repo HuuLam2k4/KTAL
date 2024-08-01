@@ -7,6 +7,7 @@ import lombok.NoArgsConstructor;
 
 import java.util.Date;
 import java.util.List;
+
 @Data
 @Entity
 @AllArgsConstructor
@@ -15,22 +16,28 @@ import java.util.List;
 public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    int product_id;
-    @Column(unique = true, nullable = false)
+    @Column(name = "product_id")
+    private int productId;
+
+    @Column(unique = true, nullable = false, name = "product_name")
     private String product_name;
+
+    @Column(name = "description")
     private String description;
+    @Column(name = "created_at")
     private Date created_at;
+    @Column(name = "updated_at")
     private Date updated_at;
 
-
     @ManyToOne
-    @JoinColumn(name = "products")
+    @JoinColumn(name = "category_id")
     private Category category;
+
+    @OneToMany(mappedBy = "products")
+    private List<Image> images;
 
     @OneToMany(mappedBy = "products")
     private List<ProductDetail> product_details;
 
-    @OneToMany(mappedBy = "products")
-    private List<Image> images;
 
 }

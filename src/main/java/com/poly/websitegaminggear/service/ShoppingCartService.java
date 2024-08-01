@@ -8,9 +8,5 @@ import java.math.BigDecimal;
 import java.util.List;
 
 public interface ShoppingCartService {
-    ShoppingCart addToCart(int quantity, int product, int cartItem );
-    void removeProduct(int product, int cartItem );
-    List<CartItem> getCartItems();
-    BigDecimal getTotal();
-
-}
+    ShoppingCart addToCart(int quantity, int productDetail);
+   }
