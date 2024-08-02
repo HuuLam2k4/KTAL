@@ -5,34 +5,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b8355c6c-181b-4aca-a942-0962f4be1923" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/controller/ProductController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/repository/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/CartItem.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/repository/CapacityRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/repository/ColorRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/repository/ImageRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/repository/ReviewRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/repository/RoleRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/repository/SupplierRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/repository/UserRoleRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/controller/ShoppingCartRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/controller/ShoppingCartRestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/controller/CategoriesController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/controller/ProductController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/controller/ShoppingCartRestController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/model/Capacity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/model/Capacity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/model/CartItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/model/CartItem.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/model/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/model/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/model/Category_Supplier.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/model/Color.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/model/Color.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/model/Image.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/model/Image.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/model/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/model/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/model/OrderItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/model/OrderItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/model/OrderStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/model/OrderStatus.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/model/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/model/ProductDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/model/ProductDetail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/model/Review.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/model/Review.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/model/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/model/Role.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/model/ShoppingCart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/model/ShoppingCart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/model/Supplier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/model/Supplier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/model/UserRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/model/UserRole.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/repository/ShoppingCartRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/repository/ShoppingCartRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/service/ShoppingCartService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/service/ShoppingCartService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/service/ShoppingCartServicempl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/service/ShoppingCartServicempl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user/product.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/user/product.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user/screenshot/Checkout.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user/screenshot/Index.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user/screenshot/Product.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user/screenshot/Regular.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user/screenshot/Store.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user/shoppingcart.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/user/shoppingcart.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user/store.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/user/store.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/user/product.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/user/product.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/user/screenshot/Checkout.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/user/screenshot/Index.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/user/screenshot/Product.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/user/screenshot/Regular.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/user/screenshot/Store.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/user/shoppingcart.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/user/shoppingcart.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/user/store.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/user/store.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/service/ShoppingCartService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/service/ShoppingCartServicempl.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,8 +45,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -184,6 +187,7 @@
       <workItem from="1722443276117" duration="182000" />
       <workItem from="1722446284561" duration="2658000" />
       <workItem from="1722484261555" duration="999000" />
+      <workItem from="1722585259137" duration="4510000" />
     </task>
     <servers />
   </component>

@@ -1,42 +1,42 @@
 package com.poly.websitegaminggear.model;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 
+import java.util.Date;
 import java.util.List;
 
 @Entity
-@NoArgsConstructor
-@AllArgsConstructor
 @Data
-@Table(name = "product_detail")
+@Table(name = "Product_Detail")
 public class ProductDetail {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int product_detail_id;
+    private int productDetailId;
+
     private double price;
-    private int quanlity;
+
+    private int quantity;
+
+    private Date createdAt;
+
+    private Date updatedAt;
 
     @ManyToOne
-    @JoinColumn(name = "product_id")
-    private Product products;
+    @JoinColumn(name = "color_id", nullable = false)
+    private Color color;
 
     @ManyToOne
-    @JoinColumn(name = "capacity_id")
+    @JoinColumn(name = "capacity_id", nullable = false)
     private Capacity capacity;
 
     @ManyToOne
-    @JoinColumn(name = "color_id")
-    private Color color;
+    @JoinColumn(name = "product_id", nullable = false)
+    private Product product;
 
-    @OneToMany(mappedBy = "productDetails")
-    private List<OrderItem> order_items;
-
-    @OneToMany(mappedBy = "productDetails")
-    private List<CartItem> cart_items;
-
-    @OneToMany(mappedBy = "productDetails")
+    @OneToMany(mappedBy = "productDetail")
     private List<Review> reviews;
+
+    @OneToMany(mappedBy = "productDetail")
+    private List<CartItem> cartItems;
 }
