@@ -1,23 +1,20 @@
 package com.poly.websitegaminggear.model;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 
 import java.util.List;
 
-
-@Data
-@AllArgsConstructor
-@NoArgsConstructor
 @Entity
+@Data
 @Table(name = "Order_Statuses")
 public class OrderStatus {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int status_id;
-    private String status_name;
+    private int statusId;
+
+    @Column(unique = true, nullable = false)
+    private String statusName;
 
     @OneToMany(mappedBy = "orderStatus")
     private List<Order> orders;

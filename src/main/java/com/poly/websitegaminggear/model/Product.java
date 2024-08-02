@@ -1,36 +1,29 @@
 package com.poly.websitegaminggear.model;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 
-import java.util.Date;
 import java.util.List;
-@Data
+
 @Entity
-@AllArgsConstructor
-@NoArgsConstructor
+@Data
 @Table(name = "Products")
 public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    int product_id;
-    @Column(unique = true, nullable = false)
-    private String product_name;
-    private String description;
-    private Date created_at;
-    private Date updated_at;
+    private int productId;
 
+    private String productName;
+
+    private String description;
 
     @ManyToOne
-    @JoinColumn(name = "products")
+    @JoinColumn(name = "category_id")
     private Category category;
 
-    @OneToMany(mappedBy = "products")
-    private List<ProductDetail> product_details;
+    @OneToMany(mappedBy = "product")
+    private List<ProductDetail> productDetails;
 
-    @OneToMany(mappedBy = "products")
+    @OneToMany(mappedBy = "product")
     private List<Image> images;
-
 }

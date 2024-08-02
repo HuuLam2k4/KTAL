@@ -1,31 +1,29 @@
 package com.poly.websitegaminggear.model;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 
 import java.util.Date;
 
 @Entity
 @Data
-@AllArgsConstructor
-@NoArgsConstructor
 @Table(name = "Reviews")
 public class Review {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int review_id;
+    private int reviewId;
     private int rating;
     private String comment;
-    private Date create_at;
-    private Date update_at;
+    private Date createdAt;
+    private Date updatedAt;
 
     @ManyToOne
     @JoinColumn(name = "product_detail_id")
-    private ProductDetail productDetails;
+    private ProductDetail productDetail;
 
     @ManyToOne
     @JoinColumn(name = "username")
-    private User users;
+    private User user;
+
+
 }

@@ -1,32 +1,36 @@
 package com.poly.websitegaminggear.model;
 
-
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 
 import java.util.Date;
 import java.util.List;
 
-@Data
-@AllArgsConstructor
-@NoArgsConstructor
 @Entity
+@Data
 @Table(name = "Orders")
-public class Order{
+public class Order {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int order_id;
-    private Date order_date;
-    private Double total_amount;
-    private  Date updated_at;
-    private String username;
+    private int orderId;
 
-    @OneToMany(mappedBy = "orders")
-    private List<OrderItem> order_items;
+    private Date orderDate;
+
+    private Date updatedAt;
+
+    private double totalAmount;
 
     @ManyToOne
-    @JoinColumn(name = "status_id")
+    @JoinColumn(name = "username", nullable = false)
+    private User user;
+
+    @ManyToOne
+    @JoinColumn(name = "status_id", nullable = false)
     private OrderStatus orderStatus;
+
+    @OneToMany(mappedBy = "order")
+    private List<OrderItem> orderItems;
+
+    @OneToMany(mappedBy = "order")
+    private List<ShoppingCart> shoppingCarts;
 }
