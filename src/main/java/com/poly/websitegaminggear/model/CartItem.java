@@ -1,10 +1,14 @@
 package com.poly.websitegaminggear.model;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Entity
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 @Table(name = "Cart_Items")
 public class CartItem {
     @Id

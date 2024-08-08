@@ -18,8 +18,6 @@ public class OrderItem {
     private int order_item_id;
     private int quantity = 1;
     private Double price;
-    private int addressOrder;
-
     @ManyToOne
     @JoinColumn(name = "order_id")
     private Order order;

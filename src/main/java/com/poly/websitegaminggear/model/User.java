@@ -1,18 +1,21 @@
 package com.poly.websitegaminggear.model;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.util.List;
 
 @Entity
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 @Table(name = "Users")
 public class User {
 
     @Id
     private String username;
-
     private String passwordHash;
     private String firstName;
     private String lastName;
