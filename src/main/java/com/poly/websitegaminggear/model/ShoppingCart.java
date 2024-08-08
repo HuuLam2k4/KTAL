@@ -8,22 +8,23 @@ import lombok.NoArgsConstructor;
 import java.util.Date;
 import java.util.List;
 
-@Data
-@NoArgsConstructor
-@AllArgsConstructor
 @Entity
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 @Table(name = "Shopping_Cart")
 public class ShoppingCart {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "cart_id")
-    private int shoppingCartId;
-    private Date create_at;
-    private Date update_at;
+    private int cartId;
+    private Date createdAt;
+    @ManyToOne
+    @JoinColumn(name = "username", nullable = false)
+    private User user;
 
     @ManyToOne
-    @JoinColumn(name = "username")
-    private User user;
+    @JoinColumn(name = "order_id")
+    private Order order;
 
     @OneToMany(mappedBy = "shoppingCart")
     private List<CartItem> cartItems;

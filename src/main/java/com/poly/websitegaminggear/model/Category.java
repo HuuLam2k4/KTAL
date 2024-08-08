@@ -7,20 +7,23 @@ import lombok.NoArgsConstructor;
 
 import java.util.List;
 
+@Entity
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Entity
 @Table(name = "Categories")
 public class Category {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int category_id;
-    @Column(unique = true)
-    private String category_name;
+    private int categoryId;
+    @Column(unique = true, nullable = false)
+    private String categoryName;
     private String description;
 
-    @OneToMany(mappedBy = "product_id")
-    private List<Product> products;
+    @ManyToOne
+    @JoinColumn(name = "supplier_id")
+    private Supplier supplier;
 
+    @OneToMany(mappedBy = "category")
+    private List<Product> products;
 }

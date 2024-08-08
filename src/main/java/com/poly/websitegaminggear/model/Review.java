@@ -15,13 +15,19 @@ import java.util.Date;
 public class Review {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int review_id;
+    private int reviewId;
     private int rating;
     private String comment;
-    private Date create_at;
-    private Date update_at;
+    private Date createdAt;
+    private Date updatedAt;
 
     @ManyToOne
-    @JoinColumn(name = "product_id")
-    private Product products;
+    @JoinColumn(name = "product_detail_id")
+    private ProductDetail productDetail;
+
+    @ManyToOne
+    @JoinColumn(name = "username")
+    private User user;
+
+
 }
