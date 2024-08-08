@@ -20,13 +20,22 @@ public class Order {
 
     private double totalAmount;
 
+    private String province;
+
+    private String ward;
+
+    private String town;
+
+    private String desciption;
+
+    private String fullname;
+
+    private String numberPhone;
+
+    private String statusOrder;
     @ManyToOne
     @JoinColumn(name = "username", nullable = false)
     private User user;
-
-    @ManyToOne
-    @JoinColumn(name = "status_id", nullable = false)
-    private OrderStatus orderStatus;
 
     @OneToMany(mappedBy = "order")
     private List<OrderItem> orderItems;

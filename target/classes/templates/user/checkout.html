@@ -1,131 +1,172 @@
 <!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		 <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-		<title>Electro - HTML Ecommerce Template</title>
+	<title>Electro - HTML Ecommerce Template</title>
 
- 		<!-- Google font -->
- 		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
+	<!-- Google font -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
 
- 		<!-- Bootstrap -->
- 		<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css"/>
+	<!-- Bootstrap -->
+	<link type="text/css" rel="stylesheet" th:href="@{/user/css/bootstrap.min.css}"/>
 
- 		<!-- Slick -->
- 		<link type="text/css" rel="stylesheet" href="css/slick.css"/>
- 		<link type="text/css" rel="stylesheet" href="css/slick-theme.css"/>
+	<!-- Slick -->
+	<link type="text/css" rel="stylesheet" th:href="@{/user/css/slick.css}"/>
+	<link type="text/css" rel="stylesheet" th:href="@{/user/css/slick-theme.css}"/>
 
- 		<!-- nouislider -->
- 		<link type="text/css" rel="stylesheet" href="css/nouislider.min.css"/>
+	<!-- nouislider -->
+	<link type="text/css" rel="stylesheet" th:href="@{/user/css/nouislider.min.css}"/>
 
- 		<!-- Font Awesome Icon -->
- 		<link rel="stylesheet" href="css/font-awesome.min.css">
+	<!-- Font Awesome Icon -->
+	<link rel="stylesheet" th:href="@{/user/css/font-awesome.min.css}">
 
- 		<!-- Custom stlylesheet -->
- 		<link type="text/css" rel="stylesheet" href="css/style.css"/>
+	<!-- Custom stlylesheet -->
+	<link type="text/css" rel="stylesheet" th:href="@{/user/css/style.css}"/>
 
-		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-		<!--[if lt IE 9]>
-		  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-		<![endif]-->
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
 
-    </head>
-	<body>
-		
+</head>
 
-		
+<body>
 
-		<!-- SECTION -->
-		<div class="section">
-			<!-- container -->
-			<div class="container">
-				
-						<div class="section-title text-center">
-							<h3 class="title">Đơn Hàng Của Bạn</h3>
-						</div>
-						<div class="order-summary">
-							<div class="order-col">
-								<div><strong>Sản phẩm</strong></div>
-								<div><strong>Tổng</strong></div>
-							</div>
-							<div class="order-products">
-								<div class="order-col">
-									<div>1x Tai nghe </div>
-									<div>980.000</div>
-								</div>
-								<div class="order-col">
-									<div>2x Chuột Gaming G102</div>
-									<div>788.000</div>
-								</div>
-							</div>
-							<div class="order-col">
-								<div>Phí ship</div>
-								<div><strong>Miễn phí</strong></div>
-							</div>
-							<div class="order-col">
-								<div><strong>Tổng</strong></div>
-								<div><strong class="order-total">1.768.000</strong></div>
-							</div>
-						</div>
-						<hr>
 
-						<div class="payment-method">
-							<div><strong>Thanh toán bằng</strong></div>
-							<br>
-							<div class="input-radio">
-								<input type="radio" name="payment" id="payment-1">
-								<label for="payment-1">
-									<span></span>
-									Chuyển khoản ngân hàng
-								</label>
-								
-							</div>
-							<div class="input-radio">
-								<input type="radio" name="payment" id="payment-2">
-								<label for="payment-2">
-									<span></span>
-									Thẻ tính dụng
-								</label>
-								
-							</div>
-							<div class="input-radio">
-								<input type="radio" name="payment" id="payment-3">
-								<label for="payment-3">
-									<span></span>
-									Thanh toán khi nhận hàng
-								</label>
-								
-							</div>
-						</div>
-						<hr>
-						<div class="input-checkbox">
-							
-						</div>
-						<a href="#" class="primary-btn order-submit">Thanh Toán</a>
+<!-- SECTION -->
+<div class="section">
+	<!-- container -->
+	<div class="container">
+		<!-- row -->
+		<div class="row">
+
+			<div class="col-md-5">
+				<!-- Billing Details -->
+				<div class="billing-details">
+					<div class="section-title">
+						<h3 class="title">Địa Chỉ Giao Hàng</h3>
 					</div>
-					<!-- /Order Details -->
-			
+					<div class="form-group">
+						<input class="input" type="text" name="name" placeholder="Tên người nhận">
+					</div>
+
+					<div class="form-group">
+						<input class="input" type="email" name="email" placeholder="Email người nhận">
+					</div>
+					<div class="form-group">
+						<input class="input" type="tel" name="tel" placeholder="Số điện thoại người nhận">
+					</div>
+					<div class="form-group">
+						<select id="tinhSelect" class="input" onchange="loadHuyen()">
+							<option value="" disabled selected>Chọn tỉnh/thành phố</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<select id="huyenSelect" class="input" onchange="loadXa()">
+							<option value="" disabled selected>Chọn huyện/quận</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<select id="xaSelect" class="input">
+							<option value="" disabled selected>Chọn xã/phường</option>
+						</select>
+					</div>
+
+				</div>
+				<!-- /Billing Details -->
+				<!-- Order notes -->
+				<div class="order-notes">
+					<textarea class="input" placeholder="Địa chỉ cụ thể"></textarea>
+				</div>
+				<!-- /Order notes -->
 			</div>
-			<!-- /container -->
+
+			<!-- Order Details -->
+			<div class="col-md-7 order-details">
+				<div class="section-title text-center">
+					<h3 class="title">Đơn hàng của bạn</h3>
+				</div>
+
+				<div class="order-summary">
+					<div class="order-col">
+						<div><strong>Sản phẩm</strong></div>
+						<div><strong>Thành tiền</strong></div>
+					</div>
+					<div class="order-products">
+						<div class="order-col">
+							<div>X1 | EDRA K98  <br> Màu trắng | 70% layout </div>
+							<div>1.200.000</div>
+						</div>
+						<hr>
+						<div class="order-col">
+							<div>X1 | EDRA K98  <br> Màu trắng | 70% layout </div>
+							<div>1.200.000</div>
+						</div>
+						<hr>
+						<div class="order-col">
+							<div>X1 | EDRA K98  <br> Màu trắng | 70% layout </div>
+							<div>1.200.000</div>
+						</div>
+						<hr>
+					</div>
+					<div class="order-col">
+						<div>Phí ship</div>
+						<div><strong>Miễn phí</strong></div>
+					</div>
+					<div class="order-col">
+						<div><strong>Tổng tiền</strong></div>
+						<div><strong class="order-total">3.600.000</strong></div>
+					</div>
+				</div>
+				<hr>
+
+				<div class="payment-method">
+					<div><strong >Phương thức thanh toán</strong></div><br>
+					<div class="input-radio">
+						<input type="radio" name="payment" id="payment-1">
+						<label for="payment-1">
+							<span></span>
+							Thanh toán trực tiếp bằng tiền mặt
+						</label>
+
+					</div>
+
+					<div class="input-radio">
+						<input type="radio" name="payment" id="payment-3">
+						<label for="payment-3">
+							<span></span>
+							Chuyển khoản ngân hàng
+						</label>
+						<div class="caption">
+							<a>VietComBank</a><br>
+							<a>MBBank</a>
+						</div>
+					</div>
+				</div>
+				<a href="#" class="primary-btn order-submit">Xác nhận đặt hàng</a>
+			</div>
+			<!-- /Order Details -->
 		</div>
-		<!-- /SECTION -->
+		<!-- /row -->
+	</div>
+	<!-- /container -->
+</div>
+<!-- /SECTION -->
+<!-- jQuery Plugins -->
+<!-- jQuery Plugins -->
+<script th:src="@{/user/js/jquery.min.js}"></script>
+<script th:src="@{/user/js/bootstrap.min.js}"></script>
+<script th:src="@{/user/js/slick.min.js}"></script>
+<script th:src="@{/user/js/nouislider.min.js}"></script>
+<script th:src="@{/user/js/jquery.zoom.min.js}"></script>
+<script th:src="@{/user/js/main.js}"></script>
+</body>
 
-	
-
-		
-
-		<!-- jQuery Plugins -->
-		<script src="js/jquery.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-		<script src="js/slick.min.js"></script>
-		<script src="js/nouislider.min.js"></script>
-		<script src="js/jquery.zoom.min.js"></script>
-		<script src="js/main.js"></script>
-
-	</body>
 </html>

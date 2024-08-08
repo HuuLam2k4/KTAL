@@ -5,26 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b8355c6c-181b-4aca-a942-0962f4be1923" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/repository/CapacityRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/repository/ColorRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/repository/ImageRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/repository/ReviewRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/repository/RoleRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/repository/SupplierRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/repository/UserRoleRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/controller/ShoppingCartController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/controller/ShoppingCartRestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/service/OrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/service/ProductDetailService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/service/ProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/service/ShoppingCartService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/controller/CategoriesController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/controller/ProductController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/controller/ShoppingCartRestController.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/model/Capacity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/model/Capacity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/model/CartItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/model/CartItem.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/model/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/model/Category.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/model/Category_Supplier.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/model/Color.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/model/Color.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/model/Image.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/model/Image.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/model/Image.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/model/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/model/Order.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/model/OrderItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/model/OrderItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/model/OrderStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/model/OrderStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/model/OrderStatus.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/model/Product.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/model/ProductDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/model/ProductDetail.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/model/Review.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/model/Review.java" afterDir="false" />
@@ -33,9 +28,135 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/model/Supplier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/model/Supplier.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/model/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/model/UserRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/model/UserRole.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/repository/CartItemRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/repository/CartItemRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/repository/ImageRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/repository/OrderStatusesRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/repository/ProductDetailRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/repository/ProductDetailRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/repository/ShoppingCartRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/repository/ShoppingCartRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/service/ShoppingCartService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/service/ShoppingCartServicempl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/pages/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/pages/404.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/pages/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/pages/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/pages/css/bootstrap-icons.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/pages/css/bootstrap-icons.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/pages/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/pages/css/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/pages/css/tooplate-kool-form-pack.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/pages/css/tooplate-kool-form-pack.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/pages/fonts/bootstrap-icons.woff" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/pages/fonts/bootstrap-icons.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/pages/fonts/bootstrap-icons.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/pages/fonts/bootstrap-icons.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/pages/images/people-practicing-social-integration.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/pages/images/people-practicing-social-integration.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/pages/js/bootstrap.bundle.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/pages/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/pages/js/countdown.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/pages/js/countdown.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/pages/js/init.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/pages/js/init.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/pages/js/jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/pages/js/jquery.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/pages/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/pages/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/pages/password-reset.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/pages/password-reset.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/pages/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/pages/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/pages/videos/video.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/pages/videos/video.mp4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user/blank.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/user/blank.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user/checkout.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/user/checkout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/user/css/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user/css/font-awesome.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/user/css/font-awesome.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user/css/nouislider.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/user/css/nouislider.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user/css/slick-theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/user/css/slick-theme.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user/css/slick.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/user/css/slick.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/user/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user/fonts/FontAwesome.otf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/user/fonts/FontAwesome.otf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user/fonts/fontawesome-webfont.eot" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/user/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user/fonts/fontawesome-webfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/user/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user/fonts/fontawesome-webfont.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/user/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user/fonts/fontawesome-webfont.woff" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/user/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user/fonts/fontawesome-webfont.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/user/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user/fonts/slick.eot" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/user/fonts/slick.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user/fonts/slick.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/user/fonts/slick.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user/fonts/slick.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/user/fonts/slick.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user/fonts/slick.woff" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/user/fonts/slick.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user/img/banphim.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/user/img/banphim.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user/img/chupt_pink.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/user/img/chupt_pink.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user/img/hotdeal.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/user/img/hotdeal.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user/img/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/user/img/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user/img/product01.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/user/img/product01.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user/img/product02.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/user/img/product02.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user/img/product03.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/user/img/product03.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user/img/product04.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/user/img/product04.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user/img/product05.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/user/img/product05.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user/img/product06.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/user/img/product06.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user/img/product07.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/user/img/product07.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user/img/product08.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/user/img/product08.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user/img/product09.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/user/img/product09.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user/img/shop01.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/user/img/shop01.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user/img/shop02.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/user/img/shop02.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user/img/shop03.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/user/img/shop03.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user/img/taingh1.webp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/user/img/taingh1.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user/img/tainghe.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/user/img/tainghe.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/user/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/user/js/bootstrap.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user/js/jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/user/js/jquery.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user/js/jquery.zoom.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/user/js/jquery.zoom.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/user/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user/js/nouislider.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/user/js/nouislider.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user/js/slick.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/user/js/slick.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user/product.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/user/product.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user/shoppingcart.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/user/shoppingcart.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user/store.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/user/store.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/pages/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/pages/404.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/pages/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/pages/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/pages/css/bootstrap-icons.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/pages/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/pages/css/tooplate-kool-form-pack.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/pages/fonts/bootstrap-icons.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/pages/fonts/bootstrap-icons.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/pages/images/people-practicing-social-integration.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/pages/js/bootstrap.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/pages/js/countdown.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/pages/js/init.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/pages/js/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/pages/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/pages/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/pages/password-reset.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/pages/password-reset.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/pages/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/pages/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/pages/videos/video.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/user/blank.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/user/blank.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/user/checkout.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/user/checkout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/user/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/user/css/font-awesome.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/user/css/nouislider.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/user/css/slick-theme.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/user/css/slick.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/user/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/user/fonts/FontAwesome.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/user/fonts/fontawesome-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/user/fonts/fontawesome-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/user/fonts/fontawesome-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/user/fonts/fontawesome-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/user/fonts/fontawesome-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/user/fonts/slick.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/user/fonts/slick.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/user/fonts/slick.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/user/fonts/slick.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/user/img/banphim.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/user/img/chupt_pink.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/user/img/hotdeal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/user/img/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/user/img/product01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/user/img/product02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/user/img/product03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/user/img/product04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/user/img/product05.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/user/img/product06.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/user/img/product07.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/user/img/product08.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/user/img/product09.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/user/img/shop01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/user/img/shop02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/user/img/shop03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/user/img/taingh1.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/user/img/tainghe.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/user/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/user/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/user/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/user/js/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/user/js/jquery.zoom.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/user/js/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/user/js/nouislider.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/user/js/slick.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/user/product.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/user/product.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/user/shoppingcart.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/user/shoppingcart.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/user/store.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/user/store.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,8 +166,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -78,6 +199,10 @@
     &quot;accountId&quot;: &quot;4a83cc48-9afa-44a4-8319-c8daa38577ed&quot;
   }
 }</component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -100,6 +225,7 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;JavaScript Debug.product.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.shoppingcart.html.executor&quot;: &quot;Run&quot;,
     &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
     &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
     &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
@@ -110,7 +236,7 @@
     &quot;git-widget-placeholder&quot;: &quot;mthuan&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/Java6/HocBai/DemoJ6B1&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/Java6/HocBai/DemoAPIJava6BE&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -127,9 +253,17 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\Java6\KTAL\src\main\resources\templates" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Java6\HocBai\KTAL\src\main\resources\static\admin" />
+      <recent name="E:\Java6\HocBai\KTAL\src\main\resources\static\user" />
+      <recent name="E:\Java6\HocBai\KTAL\src\main\resources\static\pages" />
+    </key>
   </component>
   <component name="RunManager" selected="Spring Boot.WebsiteGamingGearApplication">
     <configuration name="product.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/KTAL/src/main/resources/templates/user/product.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="shoppingcart.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/KTAL/src/main/resources/templates/user/shoppingcart.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="WebsiteGamingGearApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
@@ -142,6 +276,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.shoppingcart.html" />
         <item itemvalue="JavaScript Debug.product.html" />
       </list>
     </recent_temporary>
@@ -188,11 +323,43 @@
       <workItem from="1722446284561" duration="2658000" />
       <workItem from="1722484261555" duration="999000" />
       <workItem from="1722585259137" duration="4510000" />
+      <workItem from="1722852361978" duration="601000" />
+      <workItem from="1722853649277" duration="2780000" />
+      <workItem from="1722856485100" duration="53000" />
+      <workItem from="1722940227416" duration="1885000" />
+      <workItem from="1723004296602" duration="7085000" />
+      <workItem from="1723011911512" duration="2968000" />
+      <workItem from="1723016461527" duration="2696000" />
+      <workItem from="1723019747780" duration="308000" />
+      <workItem from="1723025253637" duration="221000" />
+      <workItem from="1723031827197" duration="3987000" />
+      <workItem from="1723085571000" duration="4794000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.RuntimeException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -1,12 +1,16 @@
 package com.poly.websitegaminggear.model;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.util.List;
 
 @Entity
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 @Table(name = "Products")
 public class Product {
     @Id
@@ -17,6 +21,8 @@ public class Product {
 
     private String description;
 
+   private String imageName;
+
     @ManyToOne
     @JoinColumn(name = "category_id")
     private Category category;
@@ -24,6 +30,4 @@ public class Product {
     @OneToMany(mappedBy = "product")
     private List<ProductDetail> productDetails;
 
-    @OneToMany(mappedBy = "product")
-    private List<Image> images;
 }
