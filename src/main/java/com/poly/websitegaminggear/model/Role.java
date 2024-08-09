@@ -19,7 +19,7 @@ public class Role {
     @Column(unique = true, nullable = false)
     private String roleName;
 
-    @OneToMany(mappedBy = "role")
+    @OneToMany(mappedBy = "role", fetch = FetchType.EAGER)
     private List<UserRole> userRoles;
 
 }

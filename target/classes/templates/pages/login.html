@@ -1,4 +1,5 @@
 <!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <html lang="en">
     <head>
         <meta charset="utf-8">
@@ -16,11 +17,11 @@
 
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,700;1,200&family=Unbounded:wght@400;700&display=swap" rel="stylesheet">
         
-        <link href="../../static/pages/css/bootstrap.min.css" rel="stylesheet">
+        <link th:href="@{/pages/css/bootstrap.min.css}" rel="stylesheet">
 
-        <link href="../../static/pages/css/bootstrap-icons.css" rel="stylesheet">
+        <link th:href="@{/pages/css/bootstrap-icons.css}" rel="stylesheet">
 
-        <link href="../../static/pages/css/tooplate-kool-form-pack.css" rel="stylesheet">
+        <link th:href="@{/pages/css/tooplate-kool-form-pack.css}" rel="stylesheet">
 <!--
 
 Tooplate 2136 Kool Form Pack
@@ -35,12 +36,7 @@ Bootstrap 5 Form Pack Template
     <body>
 
         <main>
-            
-
-           
-
-
-            <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">                
+            <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
                 <div class="offcanvas-header">                    
                     <button type="button" class="btn-close ms-auto" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
@@ -71,8 +67,6 @@ Bootstrap 5 Form Pack Template
                     </nav>
                 </div>
             </div>
-
-
             <!-- Modal -->
             <div class="modal fade" id="subscribeModal" tabindex="-1" aria-labelledby="subscribeModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
@@ -103,25 +97,22 @@ Bootstrap 5 Form Pack Template
             <section class="hero-section d-flex justify-content-center align-items-center">
                 <div class="container">
                     <div class="row">
-
                         <div class="col-lg-5 col-12 mx-auto">
-                            <form class="custom-form login-form" role="form" method="post">
+                            <form class="custom-form login-form" action="/login" role="form" method="POST">
                                 <h2 class="hero-title text-center mb-4 pb-2">Đăng nhập</h2>
 
                                 <div class="form-floating mb-4 p-0">
-                                    <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Email address" required="">
-
-                                    <label for="email">Địa chỉ email</label>
+                                    <input type="text" name="username" id="username" class="form-control" placeholder="Tên đăng nhập..." required>
+                                    <label for="username">Tên đăng nhập</label>
                                 </div>
 
                                 <div class="form-floating p-0">
-                                    <input type="password" name="password" id="password" class="form-control" placeholder="Password" required="">
-
+                                    <input type="password" name="password" id="password" class="form-control" placeholder="Mật khẩu..." required>
                                     <label for="password">Mật khẩu</label>
                                 </div>
 
                                 <div class="form-check mb-4">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <input class="form-check-input" type="checkbox" name="remember"  value="" id="flexCheckDefault">
                                   
                                     <label class="form-check-label" for="flexCheckDefault">
                                         Ghi nhớ tôi
@@ -139,15 +130,16 @@ Bootstrap 5 Form Pack Template
                                 </div>
 
                             </form>
-                            
+                            <div>
+                                <p th:if="${error}" th:text="${error}"></p>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="video-wrap">
                     <video autoplay="" loop="" muted="" class="custom-video" poster="">
-                        <source src="../../static/pages/videos/video.mp4" type="video/mp4">
-
+                        <source th:src="@{/pages/videos/video.mp4} " type="video/mp4">
                         Trình duyệt của bạn không hỗ trợ thẻ video.
                     </video>
                 </div>
@@ -155,10 +147,10 @@ Bootstrap 5 Form Pack Template
         </main>
 
         <!-- JAVASCRIPT FILES -->
-        <script src="../../static/pages/js/jquery.min.js"></script>
-        <script src="../../static/pages/js/bootstrap.bundle.min.js"></script>
-        <script src="../../static/pages/js/countdown.js"></script>
-        <script src="../../static/pages/js/init.js"></script>
+        <script th:src="@{/pages/js/jquery.min.js}"></script>
+        <script th:src="@{/pages/js/bootstrap.bundle.min.js}"></script>
+        <script th:src="@{/pages/js/countdown.js}"></script>
+        <script th:src="@{/pages/js/init.js}"></script>
 
     </body>
 </html>

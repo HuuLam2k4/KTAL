@@ -13,10 +13,12 @@ import java.util.List;
 @NoArgsConstructor
 @Table(name = "Users")
 public class User {
-
     @Id
     private String username;
-    private String passwordHash;
+
+    @Column(unique = true, nullable = false, name = "password_hash")
+    private String password;
+
     private String firstName;
     private String lastName;
     @Column(unique = true, nullable = false)
@@ -29,7 +31,7 @@ public class User {
 
     private Boolean status;
 
-    @OneToMany(mappedBy = "user")
+    @OneToMany(mappedBy = "user", fetch = FetchType.EAGER)
     private List<UserRole> userRoles;
 
     @OneToMany(mappedBy = "user")
