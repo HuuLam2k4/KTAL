@@ -18,17 +18,17 @@ public class Product {
     private int productId;
 
     private String productName;
-
     private String description;
-
     private String imageName;
+
     @ManyToOne
     @JoinColumn(name = "category_id")
     private Category category;
 
+    @ManyToOne
+    @JoinColumn(name = "supplier_id")
+    private Supplier supplier;
+
     @OneToMany(mappedBy = "product")
     private List<ProductDetail> productDetails;
-
-
-
 }
