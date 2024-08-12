@@ -132,6 +132,9 @@ public class AdminProductService {
         return productRepository.findAll();
     }
 
+
+
+
     public Product getProductById(Integer productId) {
         return productRepository.findById(productId).orElse(null);
     }
@@ -143,4 +146,7 @@ public class AdminProductService {
         }
         return false;
     }
+
+
+
 }

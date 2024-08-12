@@ -5,28 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b8355c6c-181b-4aca-a942-0962f4be1923" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/controller/ChangePasswordController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/dto/ProductRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/service/PasswordChangeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/controller/SignUpController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/service/SignUpService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/controller/AdminProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/controller/AdminProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/model/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/model/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/controller/ChangePasswordController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/controller/ChangePasswordController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/model/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/model/ProductDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/model/ProductDetail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/model/Supplier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/model/Supplier.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/repository/ProductDetailRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/repository/ProductDetailRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/repository/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/repository/ProductRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/service/AdminProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/service/AdminProductService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/donhang.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/donhang.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/hinhanh.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/hinhanh.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/sanpham.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/sanpham.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/taikhoan.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/taikhoan.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/admin/donhang.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/admin/donhang.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/admin/hinhanh.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/admin/hinhanh.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/admin/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/admin/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/admin/sanpham.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/admin/sanpham.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/admin/taikhoan.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/admin/taikhoan.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/service/PasswordChangeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poly/websitegaminggear/service/PasswordChangeService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -212,7 +199,9 @@
       <workItem from="1723053261487" duration="2589000" />
       <workItem from="1723085208870" duration="3830000" />
       <workItem from="1723089914425" duration="561000" />
-      <workItem from="1723202572709" duration="9770000" />
+      <workItem from="1723202572709" duration="11879000" />
+      <workItem from="1723303071595" duration="1390000" />
+      <workItem from="1723473605341" duration="1758000" />
     </task>
     <servers />
   </component>
